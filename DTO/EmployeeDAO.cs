@@ -81,5 +81,45 @@ namespace Constancias.DTO
             }
             return employees;
         }
+
+        public bool InsertEmployee(Employee employee)
+        {
+            bool isInserted = false;
+            using (SqlConnection sqlConnection = new SqlConnection(stringConnection))
+            {
+                try
+                {
+                    sqlConnection.Open();
+                    string query = "INSERT INTO Employee (Tuition, FirstName, MiddleName, LastName, Email, Password, " +
+                                   "IdRole, IdContractType, IdProfesorCategory) " +
+                                   "VALUES (@Tuition, @FirstName, @MiddleName, @LastName, @Email, @Password, @IdRole, @IdContractType, @IdProfesorCategory)";
+
+                    using (SqlCommand command = new SqlCommand(query, sqlConnection))
+                    {
+                        // Agregar parámetros
+                        command.Parameters.AddWithValue("@Tuition", employee.Tuition);
+                        command.Parameters.AddWithValue("@FirstName", employee.FirstName);
+                        command.Parameters.AddWithValue("@MiddleName", employee.MiddleName ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@LastName", employee.LastName);
+                        command.Parameters.AddWithValue("@Email", employee.Email);
+                        command.Parameters.AddWithValue("@Password", employee.Password);
+                        command.Parameters.AddWithValue("@IdRole", employee.IdRole);
+                        command.Parameters.AddWithValue("@IdContractType", employee.IdContractType);
+                        command.Parameters.AddWithValue("@IdProfesorCategory", employee.IdProfesorCategory);
+
+                        // Ejecutar el comando
+                        int rowsAffected = command.ExecuteNonQuery();
+                        isInserted = rowsAffected > 0;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Manejar errores
+                    Console.WriteLine($"Error al insertar empleado: {ex.Message}");
+                }
+            }
+            return isInserted;
+        }
+
     }
 }

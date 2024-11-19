@@ -42,3 +42,11 @@ C:\Users\Carmona\Source\Repos\Contancias\obj\Debug\Views\ProfessorDetails.g.cs
 C:\Users\Carmona\Source\Repos\Contancias\obj\Debug\Views\ProfessorDetails.baml
 C:\Users\Carmona\Source\Repos\Contancias\obj\Debug\Views\RegisterProfessor.g.cs
 C:\Users\Carmona\Source\Repos\Contancias\obj\Debug\Views\RegisterProfessor.baml
+C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\AdminRecordsView.g.cs
+C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\AdminView.g.cs
+C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\ProfessorDetails.g.cs
+C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\RegisterProfessor.g.cs
+C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\AdminRecordsView.baml
+C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\AdminView.baml
+C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\ProfessorDetails.baml
+C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\RegisterProfessor.baml

@@ -34,6 +34,8 @@
         <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="447,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" FontSize="20"/>
         <ComboBox x:Name="cbContractType" HorizontalAlignment="Left" Margin="447,244,0,0" VerticalAlignment="Top" Width="260" FontSize="20"/>
         <ComboBox x:Name="cbCategory" HorizontalAlignment="Left" Margin="447,320,0,0" VerticalAlignment="Top" Width="260" FontSize="20"/>
+        <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="447,354,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="447,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" FontSize="20"/>
 
     </Grid>
 </Page>
