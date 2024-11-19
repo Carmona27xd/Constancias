@@ -29,33 +29,39 @@ namespace Constancias
         public MainWindow()
         {
             InitializeComponent();
+            txtEmail.Text ="administrador@example.com";
+            txtPassword.Text = "1234";
+            employeeDAO = new EmployeeDAO();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (!checkFields())
             {
-                if (checkFields())
+                MessageBox.Show("Por favor ingrese sus credenciales", "Campos fatantes");
+            }
+            else
+            {
+                try
                 {
-                    Employee currentUser = employeeDAO.logIn(txtEmail.Text, txtPassword.Text);
-                    if (currentUser != null)
+                    Employee employee = new Employee();
+                    employee = employeeDAO.logIn(txtEmail.Text, txtPassword.Text);
+                    if (employee != null)
                     {
-                        MessageBox.Show("Bienvenido al sistema " + currentUser.FirstName);
-                        SessionManager.Instance.login(currentUser);
-
+                        SessionManager.Instance.login(employee);
+                        MessageBox.Show("Bienvenido/a al sistema " + employee.FirstName);
+                        MainFrame.Navigate(new Constancias.Views.AdminRecordsView());
                     }
                     else
                     {
-                        MessageBox.Show("Por favor verifica las credenciales");
+                        MessageBox.Show("Credenciales incorrectas", "Iniciar sesion");
                     }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("BASILIO ERES UNA PUTA");
+                    MessageBox.Show("Error al obtener la sesion", "Error");
                 }
-            } catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
 

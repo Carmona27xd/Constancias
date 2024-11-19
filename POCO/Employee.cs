@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Constancias.POCO
 {
-    internal class Employee
+    public class Employee
     {
         private int idEmployee;
         private string tuition;
@@ -18,6 +18,7 @@ namespace Constancias.POCO
         private int idRole;
         private int idContractType;
         private int idProfesorCategory;
+        private string completeName;
 
         // Getter and Setter for idEmployee
         public int IdEmployee

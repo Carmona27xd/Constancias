@@ -25,7 +25,7 @@ namespace Constancias.Connection
                 try
                 {
                     connection.Open();
-                    MessageBox.Show("Basilio te amo");
+                    MessageBox.Show("Conexion exitosa");
                 }
                 catch (Exception ex) 
                 {

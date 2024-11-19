@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\lecap\Desktop\Constancias\obj\Debug\
+C:\Users\Carmona\Source\Repos\Contancias\obj\Debug\
 Constancias
 none
 false
 DEBUG;TRACE
-C:\Users\lecap\Desktop\Constancias\App.xaml
-1219584333
+C:\Users\Carmona\Source\Repos\Contancias\App.xaml
+5-581091660
 
-91982639623
-15132882132
-MainWindow.xaml;
+131942719440
+151830822829
+MainWindow.xaml;Views\AdminRecordsView.xaml;Views\AdminView.xaml;Views\ProfessorDetails.xaml;Views\RegisterProfessor.xaml;
 
 False
 

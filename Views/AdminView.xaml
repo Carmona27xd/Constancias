@@ -1,0 +1,72 @@
+﻿<Page x:Class="Constancias.Views.AdminView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Constancias.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="AdminView">
+
+    <Grid Background="White">
+        <Rectangle HorizontalAlignment="Center" Height="79" VerticalAlignment="Top" Width="800" Fill="#3e5853"/>
+        <Rectangle HorizontalAlignment="Left" Height="521" Margin="0,79,0,0" VerticalAlignment="Top" Width="151" Fill="#5aa897"/>
+        <Rectangle HorizontalAlignment="Left" Height="39" Margin="10,116,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
+           RadiusX="10" RadiusY="10" MouseLeftButtonDown="goToRecords" Cursor="Hand"/>
+        <Label Content="Constancias" HorizontalAlignment="Left" Margin="20,117,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="lable_click" Cursor="Hand"/>
+        <Rectangle HorizontalAlignment="Left" Height="39" Margin="10,174,0,0" VerticalAlignment="Top" Width="135" Fill="#8bbab0"
+           RadiusX="10" RadiusY="10"/>
+        <Label Content="Profesores" HorizontalAlignment="Left" Margin="26,175,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Sistema de constancias" HorizontalAlignment="Left" Margin="26,15,0,0" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
+        <Rectangle HorizontalAlignment="Left" Height="39" Margin="10,514,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
+            RadiusX="10" RadiusY="10" MouseLeftButtonDown="logout_click" Cursor="Hand"/>
+        <Label Content="Cerrar sesion" HorizontalAlignment="Left" Margin="28,519,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.427,-0.401"
+               MouseLeftButtonDown="logout_label_click" Cursor="Hand"/>
+        <DataGrid x:Name="ProfessorsDatagrid" AutoGenerateColumns="False" Margin="156,98,10,117" 
+          CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserAddRows="False" 
+          CanUserResizeRows="False" CanUserSortColumns="False" IsReadOnly="True" 
+          Background="#fbfbfc" BorderBrush="#D6D5A8" BorderThickness="1">
+            <DataGrid.Columns>
+                <!-- Columna para el nombre -->
+                <DataGridTextColumn Header="Nombre" Binding="{Binding FirstName}" Width="*" />
+                <DataGridTextColumn Header="Apellido" Binding="{Binding MiddleName}" Width="*"/>
+                <!-- Columna para el número de personal -->
+                <DataGridTextColumn Header="Num de Personal" Binding="{Binding Tuition}" Width="*" />
+                <!-- Columna con botón "Detalles" -->
+                <DataGridTemplateColumn Header="Detalles" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Detalles" Command="{Binding DataContext.JoinCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" 
+                            CommandParameter="{Binding}" Click="View_Details" 
+                            FontFamily="Monocraft" Foreground="#D6D5A8" FontSize="14" FontWeight="Medium" Cursor="Hand"
+                            Background="#28c4fc">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#1B2430"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Width="120" Height="35" CornerRadius="12" Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Rectangle HorizontalAlignment="Left" Height="39" Margin="631,514,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
+            RadiusX="10" RadiusY="10" MouseLeftButtonDown="Register_Click" Cursor="Hand"/>
+        <Label Content="Registrar docente" HorizontalAlignment="Left" Margin="635,519,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.427,-0.401"
+            MouseLeftButtonDown="Register_Label_Click" Cursor="Hand"/>
+
+
+    </Grid>
+</Page>

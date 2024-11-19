@@ -46,5 +46,40 @@ namespace Constancias.DTO
             }
             return employee;
         }
+
+        public List<Employee> GetProfessors()
+        {
+            List<Employee> employees = new List<Employee>();
+            using (SqlConnection sqlConnection = new SqlConnection(stringConnection))
+            {
+                sqlConnection.Open();
+                string query = "SELECT IdEmployee, Tuition, FirstName, MiddleName, LastName, Email, Password, " +
+                       "IdRole, IdContractType, IdProfesorCategory FROM Employee " +
+                       "WHERE IdRole = 3";
+                SqlCommand command = new SqlCommand(query, sqlConnection);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Employee employee = new Employee();
+                    employee = new Employee
+                    {
+                        IdEmployee = reader.GetInt32(0),
+                        Tuition = reader.GetString(1),
+                        FirstName = reader.GetString(2),
+                        MiddleName = reader.GetString(3),
+                        LastName = reader.GetString(4),
+                        Email = reader.GetString(5),
+                        Password = reader.GetString(6),
+                        IdRole = reader.GetInt32(7),
+                        IdContractType = reader.GetInt32(8),
+                        IdProfesorCategory = reader.GetInt32(9)
+                    };
+
+                    employees.Add(employee);
+                }
+
+            }
+            return employees;
+        }
     }
 }

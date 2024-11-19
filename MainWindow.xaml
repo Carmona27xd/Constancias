@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Constancias"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        Title="Sistema de constancias" Height="600" Width="800"
+        ResizeMode="NoResize">
     <Grid>
         <Label Content="Acceder al sistema" HorizontalAlignment="Center" Height="42" Margin="0,71,0,0" VerticalAlignment="Top" Width="284" FontSize="30"
 />
@@ -14,6 +15,8 @@
         <Label Content="Usuario" HorizontalAlignment="Left" Margin="258,161,0,0" VerticalAlignment="Top"/>
         <Label Content="Contraseña" HorizontalAlignment="Left" Margin="258,219,0,0" VerticalAlignment="Top"/>
         <Button Content="Ingresar" FontSize="20" HorizontalAlignment="Left" Margin="340,292,0,0" VerticalAlignment="Top" Height="37" Width="90" Click="Button_Click"/>
+
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
 
     </Grid>
 </Window>
