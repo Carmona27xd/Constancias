@@ -32,37 +32,95 @@ namespace Constancias.Views
 
         private void Register_Click(object sender, RoutedEventArgs e)
         {
-            
+            Register();
         }
 
-        private void Register_Label_Click(object sender, RoutedEventArgs e)
+        private void Register_Label_Click (object sender, RoutedEventArgs e)
         {
-            
+            Register();
         }
 
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            GoBack();
-        }
-
-        private void Back_Label_Click(object sender, RoutedEventArgs e)
+        private void Back_Click (object sender, RoutedEventArgs e)
         {
             GoBack();
         }
 
-        
-        private Employee CreateProfessor(string category, string contractType)
+        private void Back_Label_Click (object sender, RoutedEventArgs e)
         {
-            Employee newEmployeed = new Employee();
-            newEmployeed.FirstName = txtName.Text.Trim();
-            newEmployeed.MiddleName = txtMiddleName.Text.Trim();
-            newEmployeed.LastName = txtLastname.Text.Trim();
-            newEmployeed.Tuition = txtTuition.Text.Trim();
-            newEmployeed.Email = Email.Text.Trim();
-            newEmployeed.Password = txtPassword.Text.Trim();
-            newEmployeed.IdRole = 3;
+            GoBack();
+        }
 
-            return newEmployeed;
+        private void Register()
+        {
+            // Validar primero los campos de texto
+            if (CheckFields())
+            {
+                MessageBox.Show("Por favor complete todos los campos obligatorios.");
+                return;
+            }
+
+            // Validar después los ComboBox
+            if (CheckCB())
+            {
+                MessageBox.Show("Por favor seleccione una categoría y un tipo de contrato.");
+                return;
+            }
+
+            // Si pasa las validaciones, intentar registrar
+            try
+            {
+                string category = cbCategory.Text;
+                string contractType = cbContractType.Text;
+                Employee newProfessor = CreateProfessor(category, contractType);
+                InsertProfessor(newProfessor);
+                this.NavigationService.GoBack();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocurrió un error al registrar al profesor: {ex.Message}");
+            }
+        }
+
+        private Employee CreateProfessor (string category, string contractType)
+        {
+            Employee newEmployee = new Employee();
+            newEmployee.FirstName = txtName.Text.Trim();
+            newEmployee.MiddleName = txtMiddleName.Text.Trim();
+            newEmployee.LastName = txtLastname.Text.Trim();
+            newEmployee.Tuition = txtTuition.Text.Trim();
+            newEmployee.Email = Email.Text.Trim();
+            newEmployee.Password = txtPassword.Text.Trim();
+            newEmployee.IdRole = 3;
+
+            switch (category)
+            {
+                case "Titular":
+                    newEmployee.IdProfesorCategory = 2; break;
+                case "Asociado":
+                    newEmployee.IdProfesorCategory = 3; break;
+                case "Asistente":
+                    newEmployee.IdProfesorCategory = 4; break;
+                case "Adjunto":
+                    newEmployee.IdProfesorCategory = 5; break;
+                case "Sustituto":
+                    newEmployee.IdProfesorCategory = 6; break;
+            }
+
+            switch (contractType)
+            {
+                case "Tiempo completo":
+                    newEmployee.IdContractType = 2; break;
+                case "Medio tiempo": 
+                    newEmployee.IdContractType = 3; break;
+                case "Por asignatura":
+                    newEmployee.IdContractType = 4; break;
+                case "Temporal":
+                    newEmployee.IdContractType = 5; break;
+                case "Honorarios":
+                    newEmployee.IdContractType = 6; break;
+
+            }
+            return newEmployee;
         }
 
         private void LoadCategoryCB()
@@ -78,7 +136,7 @@ namespace Constancias.Views
             cbContractType.ItemsSource = contractTypes;
         }
         
-        private void InsertProfessor(Employee employee)
+        private void InsertProfessor (Employee employee)
         {
             bool confirmation = employeeDAO.InsertEmployee(employee);
             if (confirmation)
@@ -93,17 +151,15 @@ namespace Constancias.Views
 
         private bool CheckFields()
         {
-            if(txtName.Text.Trim().Length > 0 || txtMiddleName.Text.Trim().Length >0
-                || txtLastname.Text.Trim().Length >0 || txtTuition.Text.Trim().Length >0 
-                || Email.Text.Trim().Length >0)
-            {
-                return false;
-            } 
-            else
-            {
-                return true;
-            }
+            // Verificar que todos los campos obligatorios estén completos
+            return string.IsNullOrWhiteSpace(txtName.Text) ||
+                   string.IsNullOrWhiteSpace(txtMiddleName.Text) ||
+                   string.IsNullOrWhiteSpace(txtLastname.Text) ||
+                   string.IsNullOrWhiteSpace(txtTuition.Text) ||
+                   string.IsNullOrWhiteSpace(Email.Text) ||
+                   string.IsNullOrWhiteSpace(txtPassword.Text);
         }
+
 
         private bool CheckCB()
         {
