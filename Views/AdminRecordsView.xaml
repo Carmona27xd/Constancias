@@ -14,7 +14,7 @@
         <Rectangle HorizontalAlignment="Left" Height="39" Margin="10,116,0,0" VerticalAlignment="Top" Width="135" Fill="#8bbab0"   
                RadiusX="10" RadiusY="10"/>
         <Label Content="Constancias" HorizontalAlignment="Left" Margin="20,117,0,0" VerticalAlignment="Top" FontSize="20"/>
-            <Rectangle HorizontalAlignment="Left" Height="39" Margin="10,174,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
+        <Rectangle HorizontalAlignment="Left" Height="39" Margin="10,174,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
                RadiusX="10" RadiusY="10" MouseLeftButtonDown="goToProfessors" Cursor="Hand"/>
         <Label Content="Profesores" HorizontalAlignment="Left" Margin="26,175,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="label_click" Cursor="Hand"/>
         <Label Content="Sistema de constancias" HorizontalAlignment="Left" Margin="26,15,0,0" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
@@ -22,6 +22,9 @@
         RadiusX="10" RadiusY="10" MouseLeftButtonDown="logout_click"/>
         <Label Content="Cerrar sesion" HorizontalAlignment="Left" Margin="28,519,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.427,-0.401"
                MouseLeftButtonDown="logout_click_label" Cursor="Hand"/>
+        <Rectangle HorizontalAlignment="Left" Height="39" Margin="552,175,0,0" VerticalAlignment="Top" Width="221" Fill="#a3c5bc"
+            RadiusX="10" RadiusY="10" MouseLeftButtonDown="Records_Click" Cursor="Hand"/>
+        <Label Content="Registrar constancia" HorizontalAlignment="Left" Margin="569,176,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="Records_Label_Click" Cursor="Hand"/>
 
     </Grid>
 </Page>

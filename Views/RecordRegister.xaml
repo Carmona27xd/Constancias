@@ -1,0 +1,28 @@
+﻿<Page x:Class="Constancias.Views.RecordRegister"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Constancias.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="RecordRegister">
+
+    <Grid Background="White">
+        <Rectangle HorizontalAlignment="Center" Height="79" VerticalAlignment="Top" Width="800" Fill="#3e5853"/>
+        <Label Content="Sistema de constancias" HorizontalAlignment="Left" Margin="26,15,0,0" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
+        <Label Content="Registro de constancias" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Seleccionar tipo de constancia" HorizontalAlignment="Center" Margin="0,157,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <ComboBox HorizontalAlignment="Center" Margin="0,199,0,0" VerticalAlignment="Top" Width="277" FontSize="20"/>
+        <Label Content="Profesores" HorizontalAlignment="Left" Margin="261,258,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <ComboBox HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="277" FontSize="20"/>
+        <Rectangle HorizontalAlignment="Center" Height="39" Margin="0,363,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
+            RadiusX="10" RadiusY="10" MouseLeftButtonDown="Continue_Click" Cursor="Hand"/>
+        <Label Content="Continuar" HorizontalAlignment="Center" Margin="0,364,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="Continue_Label_Click"/>
+        <Rectangle HorizontalAlignment="Center" Height="39" Margin="0,443,0,0" VerticalAlignment="Top" Width="136" Fill="#a3c5bc"
+            RadiusX="10" RadiusY="10" MouseLeftButtonDown="Back_Click" Cursor="Hand"/>
+        <Label Content="Regresar" HorizontalAlignment="Center" Margin="0,444,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="Back_Label_Click"
+               Cursor="Hand"/>
+
+    </Grid>
+</Page>

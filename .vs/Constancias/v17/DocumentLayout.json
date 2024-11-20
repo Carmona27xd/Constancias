@@ -1,69 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Carmona\\source\\repos\\Contancias\\",
+  "WorkspaceRootPath": "C:\\Users\\lecap\\Desktop\\Constancias\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|c:\\users\\carmona\\source\\repos\\contancias\\views\\registerprofessor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\registerprofessor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|c:\\users\\lecap\\desktop\\constancias\\views\\recordregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\recordregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\views\\registerprofessor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\registerprofessor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|c:\\users\\lecap\\desktop\\constancias\\views\\recordregister.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\recordregister.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\views\\professordetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\professordetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\views\\adminrecordsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\views\\adminrecordsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\adminrecordsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\views\\adminview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\adminview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\DTO\\EmployeeDAO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:DTO\\EmployeeDAO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\views\\adminview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\adminview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\views\\professordetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\professordetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\POCO\\Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:POCO\\Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\Singleton\\SessionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:Singleton\\SessionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\views\\adminrecordsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\views\\adminrecordsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\adminrecordsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|c:\\users\\lecap\\desktop\\constancias\\views\\registerprofessor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\registerprofessor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\views\\adminview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\adminview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\views\\registerprofessor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\registerprofessor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\views\\professordetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\professordetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\views\\adminview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\adminview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\DTO\\EmployeeDAO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:DTO\\EmployeeDAO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\views\\professordetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:views\\professordetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\POCO\\Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:POCO\\Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\Singleton\\SessionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:Singleton\\SessionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\Connection\\DBConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\Connection\\DBConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:Connection\\DBConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\Carmona\\source\\repos\\Contancias\\App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|C:\\Users\\lecap\\Desktop\\Constancias\\App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{24702832-7F6C-44DF-93E1-BFF48FA8A5FC}|Constancias.csproj|solutionrelative:App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -74,40 +82,119 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RecordRegister.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\RecordRegister.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\RecordRegister.xaml.cs",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\RecordRegister.xaml.cs",
+              "RelativeToolTip": "Views\\RecordRegister.xaml.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAawCQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T16:48:35.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RecordRegister.xaml",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\RecordRegister.xaml",
+              "RelativeDocumentMoniker": "Views\\RecordRegister.xaml",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\RecordRegister.xaml",
+              "RelativeToolTip": "Views\\RecordRegister.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-20T16:18:14.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminRecordsView.xaml",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\AdminRecordsView.xaml",
+              "RelativeDocumentMoniker": "Views\\AdminRecordsView.xaml",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\AdminRecordsView.xaml",
+              "RelativeToolTip": "Views\\AdminRecordsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T04:21:57.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminRecordsView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\AdminRecordsView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AdminRecordsView.xaml.cs",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\AdminRecordsView.xaml.cs",
+              "RelativeToolTip": "Views\\AdminRecordsView.xaml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T04:44:34.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "RegisterProfessor.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\RegisterProfessor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\RegisterProfessor.xaml.cs",
               "RelativeDocumentMoniker": "Views\\RegisterProfessor.xaml.cs",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\RegisterProfessor.xaml.cs",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\RegisterProfessor.xaml.cs",
               "RelativeToolTip": "Views\\RegisterProfessor.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAYwKEAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAADsAAAAAAAAAAAAswAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T02:40:27.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterProfessor.xaml",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\RegisterProfessor.xaml",
-              "RelativeDocumentMoniker": "Views\\RegisterProfessor.xaml",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\RegisterProfessor.xaml",
-              "RelativeToolTip": "Views\\RegisterProfessor.xaml",
+              "DocumentIndex": 6,
+              "Title": "AdminView.xaml",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\AdminView.xaml",
+              "RelativeDocumentMoniker": "Views\\AdminView.xaml",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\AdminView.xaml",
+              "RelativeToolTip": "Views\\AdminView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-19T02:34:07.047Z",
+              "WhenOpened": "2024-11-17T04:20:22.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T13:57:46.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "ProfessorDetails.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\ProfessorDetails.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ProfessorDetails.xaml.cs",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\ProfessorDetails.xaml.cs",
+              "RelativeToolTip": "Views\\ProfessorDetails.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAiwDkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T00:14:55.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ProfessorDetails.xaml",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\ProfessorDetails.xaml",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\ProfessorDetails.xaml",
               "RelativeDocumentMoniker": "Views\\ProfessorDetails.xaml",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\ProfessorDetails.xaml",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\ProfessorDetails.xaml",
               "RelativeToolTip": "Views\\ProfessorDetails.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-18T23:11:38.221Z"
@@ -115,85 +202,47 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "AdminView.xaml",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\AdminView.xaml",
-              "RelativeDocumentMoniker": "Views\\AdminView.xaml",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\AdminView.xaml",
-              "RelativeToolTip": "Views\\AdminView.xaml",
+              "Title": "RegisterProfessor.xaml",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\RegisterProfessor.xaml",
+              "RelativeDocumentMoniker": "Views\\RegisterProfessor.xaml",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\RegisterProfessor.xaml",
+              "RelativeToolTip": "Views\\RegisterProfessor.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-17T04:20:22.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAYwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T13:57:46.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProfessorDetails.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\ProfessorDetails.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\ProfessorDetails.xaml.cs",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\ProfessorDetails.xaml.cs",
-              "RelativeToolTip": "Views\\ProfessorDetails.xaml.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAiwDkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T00:14:55.994Z",
+              "WhenOpened": "2024-11-19T02:34:07.047Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AdminView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\AdminView.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\AdminView.xaml.cs",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\AdminView.xaml.cs",
-              "RelativeToolTip": "Views\\AdminView.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwDsAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T04:18:36.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\App.config",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\App.config",
               "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\App.config",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\App.config",
               "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABCAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-11-15T14:25:40.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminRecordsView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\AdminRecordsView.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\AdminRecordsView.xaml.cs",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\AdminRecordsView.xaml.cs",
-              "RelativeToolTip": "Views\\AdminRecordsView.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAwwDwAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "AdminView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\AdminView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AdminView.xaml.cs",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Views\\AdminView.xaml.cs",
+              "RelativeToolTip": "Views\\AdminView.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwDsAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T04:44:34.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T04:18:36.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "EmployeeDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\DTO\\EmployeeDAO.cs",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\DTO\\EmployeeDAO.cs",
               "RelativeDocumentMoniker": "DTO\\EmployeeDAO.cs",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\DTO\\EmployeeDAO.cs",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\DTO\\EmployeeDAO.cs",
               "RelativeToolTip": "DTO\\EmployeeDAO.cs",
               "ViewState": "AQIAAFwAAAAAAAAAAAAcwGQAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -201,22 +250,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AdminRecordsView.xaml",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\AdminRecordsView.xaml",
-              "RelativeDocumentMoniker": "Views\\AdminRecordsView.xaml",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Views\\AdminRecordsView.xaml",
-              "RelativeToolTip": "Views\\AdminRecordsView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-17T04:21:57.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "SessionManager.cs",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Singleton\\SessionManager.cs",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Singleton\\SessionManager.cs",
               "RelativeDocumentMoniker": "Singleton\\SessionManager.cs",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Singleton\\SessionManager.cs",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Singleton\\SessionManager.cs",
               "RelativeToolTip": "Singleton\\SessionManager.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAqwBgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -224,11 +262,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\POCO\\Employee.cs",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\POCO\\Employee.cs",
               "RelativeDocumentMoniker": "POCO\\Employee.cs",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\POCO\\Employee.cs",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\POCO\\Employee.cs",
               "RelativeToolTip": "POCO\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -236,22 +274,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-17T02:23:19.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "DBConnection.cs",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Connection\\DBConnection.cs",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\Connection\\DBConnection.cs",
               "RelativeDocumentMoniker": "Connection\\DBConnection.cs",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\Connection\\DBConnection.cs",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\Connection\\DBConnection.cs",
               "RelativeToolTip": "Connection\\DBConnection.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -259,11 +297,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Carmona\\source\\repos\\Contancias\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\lecap\\Desktop\\Constancias\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\Carmona\\source\\repos\\Contancias\\App.xaml",
+              "ToolTip": "C:\\Users\\lecap\\Desktop\\Constancias\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-15T14:24:02.507Z",

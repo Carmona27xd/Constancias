@@ -70,6 +70,9 @@
     <Compile Include="Views\ProfessorDetails.xaml.cs">
       <DependentUpon>ProfessorDetails.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\RecordRegister.xaml.cs">
+      <DependentUpon>RecordRegister.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RegisterProfessor.xaml.cs">
       <DependentUpon>RegisterProfessor.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ProfessorDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecordRegister.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

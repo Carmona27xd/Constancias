@@ -50,3 +50,5 @@ C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\AdminRecordsView.baml
 C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\AdminView.baml
 C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\ProfessorDetails.baml
 C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\RegisterProfessor.baml
+C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\RecordRegister.g.cs
+C:\Users\lecap\Desktop\Constancias\obj\Debug\Views\RecordRegister.baml

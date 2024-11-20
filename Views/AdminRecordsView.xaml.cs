@@ -26,6 +26,15 @@ namespace Constancias.Views
             InitializeComponent();
         }
 
+        private void Records_Label_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new RecordRegister());
+        }
+
+        private void Records_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new RecordRegister());
+        }
         private void goToProfessors(object sender, MouseButtonEventArgs e)
         {
             ChangeWindow();
