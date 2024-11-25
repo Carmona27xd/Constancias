@@ -1,0 +1,22 @@
+﻿<Window x:Class="Constancias.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Constancias"
+        mc:Ignorable="d"
+        Title="Sistema de constancias" Height="600" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Acceder al sistema" HorizontalAlignment="Center" Height="42" Margin="0,71,0,0" VerticalAlignment="Top" Width="284" FontSize="30"
+/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="258,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="258,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="258,161,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="258,219,0,0" VerticalAlignment="Top"/>
+        <Button Content="Ingresar" FontSize="20" HorizontalAlignment="Left" Margin="340,292,0,0" VerticalAlignment="Top" Height="37" Width="90" Click="Button_Click"/>
+
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+</Window>
