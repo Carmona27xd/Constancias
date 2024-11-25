@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Constancias"
         mc:Ignorable="d"
         Title="Sistema de constancias" Height="600" Width="800"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label Content="Acceder al sistema" HorizontalAlignment="Center" Height="42" Margin="0,71,0,0" VerticalAlignment="Top" Width="284" FontSize="30"
 />

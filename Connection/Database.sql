@@ -66,27 +66,28 @@ INSERT INTO EmployeeRole (Role)
             VALUES ('Administrador'), ('Administrativo'), ('Profesor');
 
 INSERT INTO EmployeeContractType (Type) 
-            VALUES ('Sin asignar'), -- ID = 1
+            VALUES ('Sin asignar'),     -- ID = 1
                    ('Tiempo completo'), -- ID = 2
-                   ('Medio tiempo'), -- ID = 3
-                   ('Por asignatura'), -- ID = 4
-                   ('Temporal'), -- ID = 5
-                   ('Honorarios'); -- ID = 6
+                   ('Medio tiempo'),    -- ID = 3
+                   ('Por asignatura'),  -- ID = 4
+                   ('Temporal'),        -- ID = 5
+                   ('Honorarios');      -- ID = 6
 
 INSERT INTO EmployeeProfesorCategory (Category)
-            VALUES ('Sin asignar'), -- ID = 1
-                   ('Titular'), -- ID = 2
-                   ('Asociado'), -- ID = 3
-                   ('Asistente'), -- ID = 4
-                   ('Adjunto'), -- ID = 5
-                   ('Sustituto'); -- ID = 6
+            VALUES ('Sin asignar'),     -- ID = 1
+                   ('Titular'),         -- ID = 2
+                   ('Asociado'),        -- ID = 3
+                   ('Asistente'),       -- ID = 4
+                   ('Adjunto'),         -- ID = 5
+                   ('Sustituto');       -- ID = 6
 
 -- INSERCIÓN DE EMPLEADOS ---------------------------------------------
 
 INSERT INTO Employee (Tuition, FirstName, MiddleName, LastName, Email, Password, IdRole, IdContractType, IdProfesorCategory) 
             VALUES ('zA04012840',   'Ernesto',    'González',   'Pérez',    'administrador@example.com',    '1234', 1, 1, 1), 
                    ('zD19017267',   'Sheila',     'Muñóz',      'Arraiga',  'administrativo@example.com',   '1234', 2, 1, 1),
-                   ('zP23097890',   'Erika',      'Meneses',    'Riko',     'profesor@example.com',         '1234', 3, 2, 2);
+                   ('zP23097890',   'Erika',      'Meneses',    'Riko',     'profesor@example.com',         '1234', 3, 2, 2),
+                   ('zP23097891',   'Karen',      'Cortes',     'Verdín',     'profesor2@example.com',      '1234', 3, 2, 2);
 
 -- INSERCIÓN DE TIPOS DE CERTIFICADOS ---------------------------------
 
@@ -97,3 +98,11 @@ INSERT INTO CertificadeType (Type)
                    ('De experiencia educativa'),
                    ('Jurado de exámen de oposición'),
                    ('Orbis Tertius');
+
+-- INSERCIÓN DE CERTIFICADOS ---------------------------------
+INSERT INTO Certificade (Document, DateApplied, IdCertifiedType, IdProfesor) 
+            VALUES(NULL, '2024-11-25', 1, 1), (NULL, '2024-11-25', 1, 1);
+SELECT crt.IdCertifcade, crtty.Type, CONCAT(empl.FirstName,' ',empl.MiddleName) AS ProfesorName, crt.DateApplied AS DateEmited
+FROM Certificade crt
+LEFT JOIN CertificadeType crtty ON crt.IdCertifiedType = crtty.IdCertificadeType
+LEFT JOIN Employee empl ON crt.IdProfesor = empl.IdEmployee;

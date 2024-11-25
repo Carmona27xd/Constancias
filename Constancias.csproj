@@ -60,12 +60,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DTO\CertificateDAO.cs" />
+    <Compile Include="POCO\Certificate.cs" />
     <Compile Include="Singleton\SessionManager.cs" />
     <Compile Include="Views\AdminRecordsView.xaml.cs">
       <DependentUpon>AdminRecordsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\AdminView.xaml.cs">
       <DependentUpon>AdminView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetailsCertificate.xaml.cs">
+      <DependentUpon>DetailsCertificate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HistoryCertificades.xaml.cs">
+      <DependentUpon>HistoryCertificades.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ProfessorDetails.xaml.cs">
       <DependentUpon>ProfessorDetails.xaml</DependentUpon>
@@ -95,6 +103,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AdminView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DetailsCertificate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HistoryCertificades.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Connection\Database.sql" />
+    <Resource Include="Views\images\view_details.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

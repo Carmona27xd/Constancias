@@ -1,80 +1,58 @@
 ﻿using Constancias.POCO;
 using Constancias.Singleton;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace Constancias.Views
-{
+namespace Constancias.Views {
     /// <summary>
     /// Lógica de interacción para ProfessorDetails.xaml
     /// </summary>
-    public partial class ProfessorDetails : Page
-    {
-        Employee employeeAux = new Employee();
-        public ProfessorDetails(Employee employee)
-        {
-            InitializeComponent();
+    public partial class ProfessorDetails : Page {
+        Employee employeeAux = new Employee ();
+        public ProfessorDetails (Employee employee) {
+            InitializeComponent ();
             this.employeeAux = employee;
-            InitInformation(employeeAux);
+            InitInformation (employeeAux);
         }
 
-        private void goToRecords(object sender, MouseButtonEventArgs e)
-        {
-            ChangeWindow();
+        private void goToRecords (object sender, MouseButtonEventArgs e) {
+            ChangeWindow ();
         }
 
-        private void lable_click(object sender, RoutedEventArgs e)
-        {
-            ChangeWindow();
+        private void lable_click (object sender, RoutedEventArgs e) {
+            ChangeWindow ();
         }
 
-        private void ChangeWindow()
-        {
-            this.NavigationService.Navigate(new Constancias.Views.AdminRecordsView());
+        private void ChangeWindow () {
+            this.NavigationService.Navigate (new Constancias.Views.AdminRecordsView ());
         }
 
-        private void logout_click(object sender, RoutedEventArgs e)
-        {
-            LogOut();
+        private void logout_click (object sender, RoutedEventArgs e) {
+            LogOut ();
         }
 
-        private void logout_label_click(object sender, RoutedEventArgs e)
-        {
-            LogOut();
+        private void logout_label_click (object sender, RoutedEventArgs e) {
+            LogOut ();
         }
 
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            GoBack();
+        private void Back_Click (object sender, RoutedEventArgs e) {
+            GoBack ();
         }
 
-        private void Back_Label_Click(object sender, RoutedEventArgs e)
-        {
-            GoBack();
+        private void Back_Label_Click (object sender, RoutedEventArgs e) {
+            GoBack ();
         }
 
-        public void InitInformation(Employee employee)
-        {
+        public void InitInformation (Employee employee) {
             ProfessorName.Content = employee.FirstName;
             ProfessorMiddleName.Content = employee.MiddleName;
             ProfessorLastName.Content = employee.LastName;
             Email.Content = employee.Email;
             ProfessorTuition.Content = employee.Tuition;
 
-            switch(employee.IdContractType)
-            {
+            switch (employee.IdContractType) {
                 case 1:
                     Category.Content = "Sin asignar";
                     break;
@@ -95,8 +73,7 @@ namespace Constancias.Views
                     break;
             }
 
-            switch(employee.IdProfesorCategory)
-            {
+            switch (employee.IdProfesorCategory) {
                 case 1:
                     ContractType.Content = "Sin asignar";
                     break;
@@ -116,27 +93,22 @@ namespace Constancias.Views
                     ContractType.Content = "Honorarios";
                     break;
             }
-            
+
         }
 
-        private void LogOut()
-        {
-            try
-            {
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                Window.GetWindow(this)?.Close();
-                SessionManager.Instance.logOut();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+        private void LogOut () {
+            try {
+                MainWindow mainWindow = new MainWindow ();
+                mainWindow.Show ();
+                Window.GetWindow (this)?.Close ();
+                SessionManager.Instance.logOut ();
+            } catch (Exception ex) {
+                MessageBox.Show (ex.Message);
             }
         }
 
-        private void GoBack()
-        {
-            this.NavigationService.GoBack();
+        private void GoBack () {
+            this.NavigationService.GoBack ();
         }
     }
 }
