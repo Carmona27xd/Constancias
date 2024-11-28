@@ -1,116 +1,61 @@
 ﻿namespace Constancias.POCO {
     public class Employee {
-        private int idEmployee;
-        private string tuition;
-        private string firstName;
-        private string middleName;
-        private string lastName;
-        private string email;
-        private string password;
-        private int idRole;
-        private int idContractType;
-        private int idProfesorCategory;
-        private string completeName;
-
-        // Getter and Setter for idEmployee
         public int IdEmployee {
-            get {
-                return idEmployee;
-            }
-            set {
-                idEmployee = value;
-            }
+            get; set;
         }
-
-        // Getter and Setter for tuition
         public string Tuition {
-            get {
-                return tuition;
-            }
-            set {
-                tuition = value;
-            }
+            get; set;
         }
-
-        // Getter and Setter for firstName
         public string FirstName {
-            get {
-                return firstName;
-            }
-            set {
-                firstName = value;
-            }
+            get; set;
         }
-
-        // Getter and Setter for middleName
         public string MiddleName {
-            get {
-                return middleName;
-            }
-            set {
-                middleName = value;
-            }
+            get; set;
         }
-
-        // Getter and Setter for lastName
         public string LastName {
-            get {
-                return lastName;
-            }
-            set {
-                lastName = value;
-            }
+            get; set;
         }
-
-        // Getter and Setter for email
+        public string CompleteName {
+            get; set;
+        }
+        public string Gender {
+            get; set;
+        }
         public string Email {
-            get {
-                return email;
-            }
-            set {
-                email = value;
-            }
+            get; set;
         }
-
-        // Getter and Setter for password
         public string Password {
-            get {
-                return password;
-            }
-            set {
-                password = value;
-            }
+            get; set;
         }
-
-        // Getter and Setter for idRole
+        public int IdEE {
+            get; set;
+        }
+        public string EE {
+            get; set;
+        }
+        public int IdCareer {
+            get; set;
+        }
+        public string Career {
+            get; set;
+        }
         public int IdRole {
-            get {
-                return idRole;
-            }
-            set {
-                idRole = value;
-            }
+            get; set;
         }
-
-        // Getter and Setter for idContractType
+        public string Rol {
+            get; set;
+        }
         public int IdContractType {
-            get {
-                return idContractType;
-            }
-            set {
-                idContractType = value;
-            }
+            get; set;
         }
-
-        // Getter and Setter for idProfesorCategory
+        public string ContractType {
+            get; set;
+        }
         public int IdProfesorCategory {
-            get {
-                return idProfesorCategory;
-            }
-            set {
-                idProfesorCategory = value;
-            }
+            get; set;
         }
-
+        public string ProfesorCategory {
+            get; set;
+        }
     }
 }

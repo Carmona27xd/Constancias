@@ -1,17 +1,23 @@
 ﻿using System;
 
 namespace Constancias.POCO {
-    internal class Certificate {
-        public int idCertificate {
+    public class Certificate {
+        public int IdCertificate {
+            get; set;
+        }
+        public DateTime DateEmited {
+            get; set;
+        }
+        public int IdType {
             get; set;
         }
         public string Type {
             get; set;
         }
-        public string ProfesorName {
+        public Employee Profesor {
             get; set;
         }
-        public DateTime DateEmited {
+        public byte[] Doc {
             get; set;
         }
     }

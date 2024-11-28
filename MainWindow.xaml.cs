@@ -24,10 +24,9 @@ namespace Constancias {
             } else {
                 try {
                     Employee employee = new Employee ();
-                    employee = employeeDAO.logIn (txtEmail.Text, txtPassword.Text);
+                    employee = employeeDAO.LogIn (txtEmail.Text, txtPassword.Text);
                     if (employee != null) {
                         SessionManager.Instance.login (employee);
-                        MessageBox.Show ("Bienvenido/a al sistema " + employee.FirstName);
                         MainFrame.Navigate (new Constancias.Views.AdminRecordsView ());
                     } else {
                         MessageBox.Show ("Credenciales incorrectas", "Iniciar sesion");

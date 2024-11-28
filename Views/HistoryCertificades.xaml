@@ -16,8 +16,8 @@
             <DataGrid x:Name="dataGrid_Certificates" ItemsSource="{Binding retrievedCertificates}" Width="500" Height="250" AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Tipo de constancia" Width="1.5*" Binding="{Binding Type}" />
-                    <DataGridTextColumn Header="Profesor" Width="*" Binding="{Binding ProfesorName}" />
-                    <DataGridTextColumn Header="Fecha emisión" Binding="{Binding DateEmited}" />
+                    <DataGridTextColumn Header="Profesor" Width="*" Binding="{Binding Profesor.CompleteName}" />
+                    <DataGridTextColumn Header="Fecha emisión" Binding="{Binding DateEmited, StringFormat='dd/MM/yyyy'}" />
                     <DataGridTemplateColumn Header="Detalles">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>

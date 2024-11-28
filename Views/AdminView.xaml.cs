@@ -21,7 +21,7 @@ namespace Constancias.Views {
 
         private void LoadEmployees () {
             try {
-                employees = employeeDAO.GetProfessors ();
+                employees = employeeDAO.GetProfesor ();
                 if (employees == null) {
                     MessageBox.Show ("No se han registrado profesores en el sistema");
                 } else {
