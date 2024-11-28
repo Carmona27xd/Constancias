@@ -1,5 +1,4 @@
-﻿using Microsoft.Web.WebView2.WinForms;
-using System;
+﻿using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,10 +20,20 @@ namespace Constancias.Utils {
                 MessageBox.Show ($"Error al mostrar el PDF: {ex.Message}");
             }
         }
-        public static void ShowPdfInWebView2 (WebView2 webView, byte[] pdfBytes, string fileName = "temp.pdf") {
-            string tempFilePath = Path.Combine (Path.GetTempPath (), fileName);
+        public static void ShowPdfInWebView2 (Microsoft.Web.WebView2.Wpf.WebView2 webView, byte[] pdfBytes, string fileName = "temp.pdf") {
+            /*string tempFilePath = Path.Combine (Path.GetTempPath (), fileName);
+            File.WriteAllBytes (tempFilePath, pdfBytes);
+            webView.Source = new Uri (tempFilePath);*/
+
+            /*
+            string tempFilePath = System.IO.Path.Combine (System.IO.Path.GetTempPath (), "temp.pdf");
             File.WriteAllBytes (tempFilePath, pdfBytes);
             webView.Source = new Uri (tempFilePath);
+            */
+
+            string base64Pdf = Convert.ToBase64String (pdfBytes);
+            string dataUrl = $"data:application/pdf;base64,{base64Pdf}";
+            webView.CoreWebView2.Navigate (dataUrl);
         }
     }
 }
