@@ -5,18 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Constancias"
         mc:Ignorable="d"
-        Title="Sistema de constancias" Height="600" Width="800"
-        ResizeMode="NoResize">
+        Title="Sistema de constancias" Height="865" Width="1536" WindowState="Maximized" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" Background="#e0f4ff">
     <Grid>
-        <Label Content="Acceder al sistema" HorizontalAlignment="Center" Height="42" Margin="0,71,0,0" VerticalAlignment="Top" Width="284" FontSize="30"
-/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="258,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="258,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"/>
-        <Label Content="Usuario" HorizontalAlignment="Left" Margin="258,161,0,0" VerticalAlignment="Top"/>
-        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="258,219,0,0" VerticalAlignment="Top"/>
-        <Button Content="Ingresar" FontSize="20" HorizontalAlignment="Left" Margin="340,292,0,0" VerticalAlignment="Top" Height="37" Width="90" Click="Button_Click"/>
-
-        <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
-
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="1063,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="294" Height="44"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="1063,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="294" Height="44"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="1063,305,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="1063,432,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button Content="Ingresar" FontSize="20" HorizontalAlignment="Left" Margin="1134,599,0,0" VerticalAlignment="Top" Height="48" Width="152" Click="Button_Aceptar" BorderBrush="#FF52F953" Background="#FF52F953"/>
+        <Image HorizontalAlignment="Left" Height="235" Margin="975,58,0,0" VerticalAlignment="Top" Width="470" Source="pack://application:,,,/Imagenes\Sistema de generación de constancias logo.png"/>
+        <Image HorizontalAlignment="Left" Height="865" VerticalAlignment="Center" Width="890" Stretch="UniformToFill" Source="pack://application:,,,/Imagenes\Constancias.png"/>
+        <Button Content="Salir" FontSize="17" HorizontalAlignment="Left" Margin="1158,669,0,0" VerticalAlignment="Top" Height="33" Width="104" Click="Button_Salir" BorderBrush="#FFFB2F2F" Background="#FFFB2F2F"/>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated" Margin="0,0,0,1"/>
     </Grid>
 </Window>

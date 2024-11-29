@@ -35,7 +35,7 @@ namespace Constancias
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Aceptar(object sender, RoutedEventArgs e)
         {
             if (!checkFields())
             {
@@ -72,6 +72,17 @@ namespace Constancias
             {
                 return true;
             }
+        }
+
+        private void Button_Salir(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }

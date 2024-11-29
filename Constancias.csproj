@@ -139,6 +139,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Imagenes\Sistema de generación de constancias logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Constancias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\IconoConstancia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\IconProfesor.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
