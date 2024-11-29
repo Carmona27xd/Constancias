@@ -6,28 +6,26 @@
       xmlns:local="clr-namespace:Constancias.Views"
       mc:Ignorable="d" 
       d:DesignHeight="865" d:DesignWidth="1536"
-      Title="AdminRecordsView">
+      Title="AdminRecordsView" Cursor="Hand">
 
     <Grid Background="White">
         <Rectangle HorizontalAlignment="Center" Height="131" VerticalAlignment="Top" Width="1536" Fill="#3e5853"/>
         <Rectangle HorizontalAlignment="Left" Height="734" Margin="0,131,0,0" VerticalAlignment="Top" Width="341" Fill="#5aa897"/>
-        <Rectangle HorizontalAlignment="Left" Height="88" Margin="0,176,0,0" VerticalAlignment="Top" Width="341" Fill="#8bbab0"/>
+
+        <Button Content="Registrar constancia" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="221" 
+                Click="RegistrarConstancia" BorderBrush="#FFD9D9D9" Background="#FFD9D9D9" Margin="1275,209,0,0" Cursor="Hand"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="88" Margin="0,176,0,0" VerticalAlignment="Top" Width="341" Fill="#FF7C8F8A"/>
         <Label Content="Constancias" HorizontalAlignment="Left" Margin="195,202,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+
         <Rectangle HorizontalAlignment="Left" Height="87" Margin="0,281,0,0" VerticalAlignment="Top" Width="341" Fill="#a3c5bc"
-               MouseLeftButtonDown="goToProfessors" Cursor="Hand"/>
-        <Label Content="Profesores" HorizontalAlignment="Left" Margin="195,306,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="label_click" Cursor="Hand" FontWeight="Bold"/>
+               MouseLeftButtonDown="IrAProfesores" Cursor="Hand"/>
+        <Label Content="Profesores" HorizontalAlignment="Left" Margin="195,306,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="IrAProfesores" Cursor="Hand" FontWeight="Bold"/>
+
         <Label Content="Sistema de generación de constancias" HorizontalAlignment="Left" Margin="28,35,0,0" VerticalAlignment="Top" FontSize="38" Foreground="White"/>
-        <Rectangle HorizontalAlignment="Left" Height="50" Margin="1367,46,0,0" VerticalAlignment="Top" Width="129" Fill="#FFF36E49"
-        RadiusX="10" RadiusY="10" MouseLeftButtonDown="logout_click"/>
-        <Label Content="Cerrar sesion" HorizontalAlignment="Left" Margin="1381,56,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.427,-0.401"
-               MouseLeftButtonDown="logout_click_label" Cursor="Hand" Foreground="White" FontWeight="Bold"/>
-        <Rectangle HorizontalAlignment="Left" Height="65" Margin="1275,220,0,0" VerticalAlignment="Top" Width="221" Fill="#a3c5bc"
-            RadiusX="10" RadiusY="10" MouseLeftButtonDown="Records_Click" Cursor="Hand">
-            <Rectangle.Style>
-                <Style/>
-            </Rectangle.Style>
-        </Rectangle>
-        <Label Content="Registrar constancia" HorizontalAlignment="Left" Margin="1292,234,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="Records_Label_Click" Cursor="Hand"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="1292,234,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="RegistrarConstancia" Cursor="Hand"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="1381,56,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.427,-0.401"
+               MouseLeftButtonDown="CerrarSesion" Cursor="Hand" Foreground="White" FontWeight="Bold"/>
 
         <Line X1="10" Y1="400" X2="500" Y2="0" Stroke="Black" Margin="1008,284,38,92" RenderTransformOrigin="0.5,0.5" >
             <Line.RenderTransform>
@@ -40,7 +38,10 @@
             </Line.RenderTransform>
         </Line>
         <Image HorizontalAlignment="Left" Height="64" Margin="35,186,0,0" VerticalAlignment="Top" Width="100" Source="pack://application:,,,/Imagenes/IconoConstancia.png"/>
-        <Image HorizontalAlignment="Left" Height="64" Margin="35,292,0,0" VerticalAlignment="Top" Width="100" Source="pack://application:,,,/Imagenes/IconProfesor.png"/>
+        <Image HorizontalAlignment="Left" Height="64" MouseLeftButtonDown="IrAProfesores" Cursor="Hand" Margin="35,292,0,0" VerticalAlignment="Top" Width="100" Source="pack://application:,,,/Imagenes/IconProfesor.png"/>
+        
+        <Button Content="Cerrar sesión" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="163" 
+            Click="CerrarSesion" BorderBrush="#FFEE3737" Background="#FFEE3737" Margin="1333,32,0,0" Cursor="Hand" FontWeight="Bold" Foreground="White"/>
 
     </Grid>
 </Page>

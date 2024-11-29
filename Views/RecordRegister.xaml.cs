@@ -27,22 +27,10 @@ namespace Constancias.Views
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Registro cancelado");
-            this.NavigationService.GoBack();
-        }
-
-        private void Back_Label_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Registro cancelado");
             this.NavigationService.GoBack();
         }
 
         private void Continue_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Continue_Label_Click(Object sender, RoutedEventArgs e)
         {
 
         }

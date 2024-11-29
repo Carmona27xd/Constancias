@@ -5,24 +5,25 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Constancias.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="800"
+      d:DesignHeight="865" d:DesignWidth="1536"
       Title="RecordRegister">
 
     <Grid Background="White">
-        <Rectangle HorizontalAlignment="Center" Height="79" VerticalAlignment="Top" Width="800" Fill="#3e5853"/>
-        <Label Content="Sistema de constancias" HorizontalAlignment="Left" Margin="26,15,0,0" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
-        <Label Content="Registro de constancias" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Seleccionar tipo de constancia" HorizontalAlignment="Center" Margin="0,157,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Center" Margin="0,199,0,0" VerticalAlignment="Top" Width="277" FontSize="20"/>
-        <Label Content="Profesores" HorizontalAlignment="Left" Margin="261,258,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="277" FontSize="20"/>
-        <Rectangle HorizontalAlignment="Center" Height="39" Margin="0,363,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
-            RadiusX="10" RadiusY="10" MouseLeftButtonDown="Continue_Click" Cursor="Hand"/>
-        <Label Content="Continuar" HorizontalAlignment="Center" Margin="0,364,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="Continue_Label_Click"/>
-        <Rectangle HorizontalAlignment="Center" Height="39" Margin="0,443,0,0" VerticalAlignment="Top" Width="136" Fill="#a3c5bc"
-            RadiusX="10" RadiusY="10" MouseLeftButtonDown="Back_Click" Cursor="Hand"/>
-        <Label Content="Regresar" HorizontalAlignment="Center" Margin="0,444,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="Back_Label_Click"
-               Cursor="Hand"/>
+        <Rectangle HorizontalAlignment="Center" Height="131" VerticalAlignment="Top" Width="1536" Fill="#3e5853"/>
+        <Label Content="Sistema de generación de constancias" HorizontalAlignment="Left" Margin="35,35,0,0" VerticalAlignment="Top" FontSize="38" Foreground="White"/>
+        <Label Content="Registro de constancias" HorizontalAlignment="Left" Margin="584,199,0,0" VerticalAlignment="Top" FontSize="31" FontWeight="Bold"/>
+        <Label Content="Seleccionar tipo de constancia" HorizontalAlignment="Left" Margin="543,308,0,0" VerticalAlignment="Top" FontSize="21" Height="37" Width="339"/>
+        <ComboBox HorizontalAlignment="Left" Margin="543,350,0,0" VerticalAlignment="Top" Width="433" FontSize="20" Height="56"/>
+        <Label Content="Profesores" HorizontalAlignment="Left" Margin="543,461,0,0" VerticalAlignment="Top" FontSize="21" Height="37" Width="153"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="433" FontSize="20" Height="56" Margin="543,499,0,0"/>
+
+        <Button Content="Continuar" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="188" 
+                Click="Continue_Click" BorderBrush="#FF85E323" Background="#FF85E323" Margin="527,678,0,0" Cursor="Hand" Foreground="White"/>
+        <Button Content="Regresar" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="189" 
+            Click="Back_Click" BorderBrush="#FFED5B5B" Background="#FFED5B5B" Margin="806,678,0,0" Cursor="Hand" Foreground="White"/>
+
+        <Image HorizontalAlignment="Left" Height="52" Margin="469,300,0,0" VerticalAlignment="Top" Width="54" Source="pack://application:,,,/Imagenes/IconoConstancia.png"/>
+        <Image HorizontalAlignment="Left" Height="53" Cursor="Hand" Margin="470,447,0,0" VerticalAlignment="Top" Width="51" Source="pack://application:,,,/Imagenes/IconProfesor.png"/>
 
     </Grid>
 </Page>

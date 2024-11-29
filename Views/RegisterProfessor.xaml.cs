@@ -32,26 +32,6 @@ namespace Constancias.Views
 
         private void Register_Click(object sender, RoutedEventArgs e)
         {
-            Register();
-        }
-
-        private void Register_Label_Click (object sender, RoutedEventArgs e)
-        {
-            Register();
-        }
-
-        private void Back_Click (object sender, RoutedEventArgs e)
-        {
-            GoBack();
-        }
-
-        private void Back_Label_Click (object sender, RoutedEventArgs e)
-        {
-            GoBack();
-        }
-
-        private void Register()
-        {
             // Validar primero los campos de texto
             if (CheckFields())
             {
@@ -73,12 +53,23 @@ namespace Constancias.Views
                 string contractType = cbContractType.Text;
                 Employee newProfessor = CreateProfessor(category, contractType);
                 InsertProfessor(newProfessor);
-                this.NavigationService.GoBack();
+                this.NavigationService.Navigate(new AdminView());
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Ocurrió un error al registrar al profesor: {ex.Message}");
             }
+        }
+
+        private void Back_Click (object sender, RoutedEventArgs e)
+        {
+            GoBack();
+        }
+
+        private void Back_Label_Click (object sender, RoutedEventArgs e)
+        {
+            GoBack();
         }
 
         private Employee CreateProfessor (string category, string contractType)

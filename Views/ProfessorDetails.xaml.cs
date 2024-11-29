@@ -30,14 +30,35 @@ namespace Constancias.Views
             InitInformation(employeeAux);
         }
 
-        private void goToRecords(object sender, MouseButtonEventArgs e)
+        private void RegistrarProfesor(object sender, RoutedEventArgs e)
         {
-            ChangeWindow();
+            this.NavigationService.Navigate(new RegisterProfessor());
+
         }
 
-        private void lable_click(object sender, RoutedEventArgs e)
+        private void IrAProfesores(object sender, MouseButtonEventArgs e)
         {
-            ChangeWindow();
+            this.NavigationService.Navigate(new Constancias.Views.AdminView());
+        }
+
+        private void IrAConstancias(object sender, MouseButtonEventArgs e)
+        {
+            this.NavigationService.Navigate(new Constancias.Views.AdminRecordsView());
+        }
+
+        private void CerrarSesion(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                Window.GetWindow(this)?.Close();
+                SessionManager.Instance.logOut();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void ChangeWindow()
@@ -45,24 +66,9 @@ namespace Constancias.Views
             this.NavigationService.Navigate(new Constancias.Views.AdminRecordsView());
         }
 
-        private void logout_click(object sender, RoutedEventArgs e)
-        {
-            LogOut();
-        }
-
-        private void logout_label_click(object sender, RoutedEventArgs e)
-        {
-            LogOut();
-        }
-
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            GoBack();
-        }
-
-        private void Back_Label_Click(object sender, RoutedEventArgs e)
-        {
-            GoBack();
+            this.NavigationService.GoBack();
         }
 
         public void InitInformation(Employee employee)
@@ -117,26 +123,6 @@ namespace Constancias.Views
                     break;
             }
             
-        }
-
-        private void LogOut()
-        {
-            try
-            {
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                Window.GetWindow(this)?.Close();
-                SessionManager.Instance.logOut();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void GoBack()
-        {
-            this.NavigationService.GoBack();
         }
     }
 }

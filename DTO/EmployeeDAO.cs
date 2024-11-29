@@ -13,17 +13,17 @@ namespace Constancias.DTO
     {
         string stringConnection = DBConnection.getStringConnection();
 
-        public Employee logIn(string email, string password)
+        public Employee LogIn(string email, string password)
         {
             Employee employee = null;
             using (SqlConnection sqlConnection = new SqlConnection(stringConnection))
             {
                 sqlConnection.Open();
                 string query = "SELECT IdEmployee, Tuition, FirstName, MiddleName, LastName, Email, Password, " +
-                       "IdRole, IdContractType, IdProfesorCategory FROM Employee " +
-                       "WHERE Email = @Email AND Password = @Password";
+                               "IdRole, IdContractType, IdProfesorCategory FROM Employee " +
+                               "WHERE Email = @Email AND Password = @Password";
                 SqlCommand command = new SqlCommand(query, sqlConnection);
-                command.Parameters.AddWithValue("@email", email);
+                command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", password);
                 SqlDataReader reader = command.ExecuteReader();
 
@@ -46,6 +46,7 @@ namespace Constancias.DTO
             }
             return employee;
         }
+
 
         public List<Employee> GetProfessors()
         {

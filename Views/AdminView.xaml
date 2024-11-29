@@ -5,27 +5,46 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Constancias.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="800"
-      Title="AdminView">
+      d:DesignHeight="865" d:DesignWidth="1536"
+      Title="AdminRView">
 
     <Grid Background="White">
-        <Rectangle HorizontalAlignment="Center" Height="79" VerticalAlignment="Top" Width="800" Fill="#3e5853"/>
-        <Rectangle HorizontalAlignment="Left" Height="521" Margin="0,79,0,0" VerticalAlignment="Top" Width="151" Fill="#5aa897"/>
-        <Rectangle HorizontalAlignment="Left" Height="39" Margin="10,116,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
-           RadiusX="10" RadiusY="10" MouseLeftButtonDown="goToRecords" Cursor="Hand"/>
-        <Label Content="Constancias" HorizontalAlignment="Left" Margin="20,117,0,0" VerticalAlignment="Top" FontSize="20" MouseLeftButtonDown="lable_click" Cursor="Hand"/>
-        <Rectangle HorizontalAlignment="Left" Height="39" Margin="10,174,0,0" VerticalAlignment="Top" Width="135" Fill="#8bbab0"
-           RadiusX="10" RadiusY="10"/>
-        <Label Content="Profesores" HorizontalAlignment="Left" Margin="26,175,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Sistema de constancias" HorizontalAlignment="Left" Margin="26,15,0,0" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
-        <Rectangle HorizontalAlignment="Left" Height="39" Margin="10,514,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
-            RadiusX="10" RadiusY="10" MouseLeftButtonDown="logout_click" Cursor="Hand"/>
-        <Label Content="Cerrar sesion" HorizontalAlignment="Left" Margin="28,519,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.427,-0.401"
-               MouseLeftButtonDown="logout_label_click" Cursor="Hand"/>
-        <DataGrid x:Name="ProfessorsDatagrid" AutoGenerateColumns="False" Margin="156,98,10,117" 
+        <Rectangle HorizontalAlignment="Center" Height="131" VerticalAlignment="Top" Width="1536" Fill="#3e5853"/>
+        <Rectangle HorizontalAlignment="Left" Height="734" Margin="0,131,0,0" VerticalAlignment="Top" Width="341" Fill="#5aa897"/>
+
+        <Button Content="Registrar profesor" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="221" 
+                Click="RegistrarProfesor" BorderBrush="#FFD9D9D9" Background="#FFD9D9D9" Margin="1275,209,0,0" Cursor="Hand"/> 
+
+        <Rectangle HorizontalAlignment="Left" Height="88" Margin="0,176,0,0" VerticalAlignment="Top" Width="341" Fill="#FFA3C5BC" MouseLeftButtonDown="IrAConstancias" Cursor="Hand"/>
+        <Label Content="Constancias" HorizontalAlignment="Left" Margin="195,202,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" MouseLeftButtonDown="IrAConstancias" Cursor="Hand"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="87" Margin="0,281,0,0" VerticalAlignment="Top" Width="341" Fill="#FF7C8F8A" Cursor="Hand"/>
+        <Label Content="Profesores" HorizontalAlignment="Left" Margin="195,306,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+
+        <Label Content="Sistema de generación de constancias" HorizontalAlignment="Left" Margin="28,35,0,0" VerticalAlignment="Top" FontSize="38" Foreground="White"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="1381,56,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.427,-0.401"
+               MouseLeftButtonDown="CerrarSesion" Cursor="Hand" Foreground="White" FontWeight="Bold"/>
+
+        <Line X1="10" Y1="400" X2="500" Y2="0" Stroke="Black" Margin="1008,284,38,92" RenderTransformOrigin="0.5,0.5" >
+            <Line.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-50.799"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Line.RenderTransform>
+        </Line>
+        <Image HorizontalAlignment="Left" Height="64" Margin="35,186,0,0" MouseLeftButtonDown="IrAConstancias" Cursor="Hand" VerticalAlignment="Top" Width="100" Source="pack://application:,,,/Imagenes/IconoConstancia.png"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="35,292,0,0" VerticalAlignment="Top" Width="100" Source="pack://application:,,,/Imagenes/IconProfesor.png"/>
+
+        <Button Content="Cerrar sesión" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="163" 
+            Click="CerrarSesion" BorderBrush="#FFEE3737" Background="#FFEE3737" Margin="1333,32,0,0" Cursor="Hand" FontWeight="Bold" Foreground="White"/>
+
+        <DataGrid x:Name="ProfessorsDatagrid" AutoGenerateColumns="False" Margin="367,176,333,39" 
           CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserAddRows="False" 
           CanUserResizeRows="False" CanUserSortColumns="False" IsReadOnly="True" 
-          Background="#fbfbfc" BorderBrush="#D6D5A8" BorderThickness="1">
+          Background="#fbfbfc" BorderBrush="#D6D5A8" BorderThickness="1" SelectionChanged="ProfessorsDatagrid_SelectionChanged">
             <DataGrid.Columns>
                 <!-- Columna para el nombre -->
                 <DataGridTextColumn Header="Nombre" Binding="{Binding FirstName}" Width="*" />
@@ -38,8 +57,8 @@
                         <DataTemplate>
                             <Button Content="Detalles" Command="{Binding DataContext.JoinCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" 
                             CommandParameter="{Binding}" Click="View_Details" 
-                            FontFamily="Monocraft" Foreground="#D6D5A8" FontSize="14" FontWeight="Medium" Cursor="Hand"
-                            Background="#28c4fc">
+                            FontFamily="Monocraft" Foreground="White" FontSize="14" FontWeight="Medium" Cursor="Hand"
+                            Background="LightGreen">
                                 <Button.Style>
                                     <Style TargetType="{x:Type Button}">
                                         <Style.Triggers>
@@ -51,7 +70,7 @@
                                 </Button.Style>
                                 <Button.Template>
                                     <ControlTemplate TargetType="{x:Type Button}">
-                                        <Border Width="120" Height="35" CornerRadius="12" Background="{TemplateBinding Background}">
+                                        <Border Width="110" Height="25" CornerRadius="12" Background="{TemplateBinding Background}">
                                             <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
                                         </Border>
                                     </ControlTemplate>
@@ -62,11 +81,5 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Rectangle HorizontalAlignment="Left" Height="39" Margin="631,514,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
-            RadiusX="10" RadiusY="10" MouseLeftButtonDown="Register_Click" Cursor="Hand"/>
-        <Label Content="Registrar docente" HorizontalAlignment="Left" Margin="635,519,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.427,-0.401"
-            MouseLeftButtonDown="Register_Label_Click" Cursor="Hand"/>
-
-
     </Grid>
 </Page>

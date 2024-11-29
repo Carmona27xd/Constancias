@@ -50,39 +50,35 @@ namespace Constancias.Views
             }
         }
 
-        private void Register_Click(object sender, RoutedEventArgs e)
+        private void RegistrarProfesor(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Constancias.Views.RegisterProfessor());
+            this.NavigationService.Navigate(new RegisterProfessor());
+
         }
 
-        private void Register_Label_Click(object obj, RoutedEventArgs e)
+        private void IrAProfesores(object sender, MouseButtonEventArgs e)
         {
-            this.NavigationService.Navigate(new Constancias.Views.RegisterProfessor());
+            this.NavigationService.Navigate(new Constancias.Views.AdminView());
         }
 
-        private void goToRecords(object sender, MouseButtonEventArgs e)
-        {
-            ChangeWindow();
-        }
-
-        private void lable_click(object sender, RoutedEventArgs e)
-        {
-            ChangeWindow();
-        }
-
-        private void ChangeWindow()
+        private void IrAConstancias(object sender, MouseButtonEventArgs e)
         {
             this.NavigationService.Navigate(new Constancias.Views.AdminRecordsView());
         }
 
-        private void logout_click(object sender, RoutedEventArgs e)
+        private void CerrarSesion(object sender, RoutedEventArgs e)
         {
-            LogOut();
-        }
-
-        private void logout_label_click(object sender, RoutedEventArgs e)
-        {
-            LogOut();
+            try
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                Window.GetWindow(this)?.Close();
+                SessionManager.Instance.logOut();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void View_Details(object sender, RoutedEventArgs e)
@@ -100,19 +96,9 @@ namespace Constancias.Views
             }
         }
 
-        private void LogOut()
+        private void ProfessorsDatagrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            try
-            {
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                Window.GetWindow(this)?.Close();
-                SessionManager.Instance.logOut();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+
         }
     }
 }

@@ -46,12 +46,23 @@ namespace Constancias
                 try
                 {
                     Employee employee = new Employee();
-                    employee = employeeDAO.logIn(txtEmail.Text, txtPassword.Text);
+                    employee = employeeDAO.LogIn(txtEmail.Text, txtPassword.Text);
                     if (employee != null)
                     {
                         SessionManager.Instance.login(employee);
-                        MessageBox.Show("Bienvenido/a al sistema " + employee.FirstName);
-                        MainFrame.Navigate(new Constancias.Views.AdminRecordsView());
+
+                        if(employee.IdEmployee == 1)
+                        {
+                            MessageBox.Show("Bienvenido/a al sistema administrativo " + employee.FirstName + " " + employee.MiddleName + " " + employee.LastName);
+                            MainFrame.Navigate(new Constancias.Views.AdminRecordsView());
+                        }
+
+                        else if(employee.IdEmployee == 3)
+                        {
+                            MessageBox.Show("Bienvenido/a al sistema profesor " + employee.FirstName + " " + employee.MiddleName + " " + employee.LastName);
+                            MainFrame.Navigate(new Constancias.Views.ProfessorView());
+
+                        }
                     }
                     else
                     {

@@ -5,37 +5,35 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Constancias.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="800"
+      d:DesignHeight="865" d:DesignWidth="1536"
       Title="RegisterProfessor">
 
     <Grid Background="White">
-        <Rectangle HorizontalAlignment="Center" Height="79" VerticalAlignment="Top" Width="800" Fill="#3e5853"/>
-        <Label Content="Sistema de constancias" HorizontalAlignment="Left" Margin="26,15,0,0" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
-        <Label Content="Informacion del profesor" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="26,126,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Apellido paterno:" HorizontalAlignment="Left" Margin="26,202,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Apellido materno:" HorizontalAlignment="Left" Margin="26,278,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Numero de personal:" HorizontalAlignment="Left" Margin="26,354,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Correo:" HorizontalAlignment="Left" Margin="447,126,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Tipo de contrato:" HorizontalAlignment="Left" Margin="447,202,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Categoria:" HorizontalAlignment="Left" Margin="447,278,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Rectangle HorizontalAlignment="Left" Height="38" Margin="573,508,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
-        RadiusX="10" RadiusY="10" MouseLeftButtonDown="Back_Click" Cursor="Hand"/>
-        <Label Content="Regresar" HorizontalAlignment="Left" Margin="607,512,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.427,-0.401"
-        MouseLeftButtonDown="Back_Label_Click" Cursor="Hand"/>
-        <Rectangle HorizontalAlignment="Left" Height="38" Margin="366,508,0,0" VerticalAlignment="Top" Width="135" Fill="#a3c5bc"
-            RadiusX="10" RadiusY="10" MouseLeftButtonDown="Register_Click" Cursor="Hand"/>
-        <Label Content="Registrar" HorizontalAlignment="Left" Margin="400,512,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.427,-0.401"
-            MouseLeftButtonDown="Register_Label_Click" Cursor="Hand"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="26,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" FontSize="20"/>
-        <TextBox x:Name="txtMiddleName" HorizontalAlignment="Left" Margin="26,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" FontSize="20"/>
-        <TextBox x:Name="txtLastname" HorizontalAlignment="Left" Margin="26,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" FontSize="20"/>
-        <TextBox x:Name="txtTuition" HorizontalAlignment="Left" Margin="26,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" FontSize="20"/>
-        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="447,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" FontSize="20"/>
-        <ComboBox x:Name="cbContractType" HorizontalAlignment="Left" Margin="447,244,0,0" VerticalAlignment="Top" Width="260" FontSize="20"/>
-        <ComboBox x:Name="cbCategory" HorizontalAlignment="Left" Margin="447,320,0,0" VerticalAlignment="Top" Width="260" FontSize="20"/>
-        <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="447,354,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="447,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" FontSize="20"/>
+        <Rectangle HorizontalAlignment="Center" Height="131" VerticalAlignment="Top" Width="1536" Fill="#3e5853"/>
+        <Label Content="Sistema de generación de constancias" HorizontalAlignment="Left" Margin="24,35,0,0" VerticalAlignment="Top" FontSize="38" Foreground="White"/>
+        <Label Content="Informacion del profesor" HorizontalAlignment="Left" Margin="185,159,0,0" VerticalAlignment="Top" FontSize="31" Height="50" Width="392" FontWeight="Bold"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="213,260,0,0" VerticalAlignment="Top" FontSize="21" Height="47" Width="125"/>
+        <Label Content="Apellido paterno:" HorizontalAlignment="Left" Margin="213,396,0,0" VerticalAlignment="Top" FontSize="21" Height="45" Width="231"/>
+        <Label Content="Apellido materno:" HorizontalAlignment="Left" Margin="215,533,0,0" VerticalAlignment="Top" FontSize="21" Height="45" Width="240"/>
+        <Label Content="Numero de personal:" HorizontalAlignment="Left" Margin="215,669,0,0" VerticalAlignment="Top" FontSize="21" Height="46" Width="279"/>
+        <Label Content="Correo:" HorizontalAlignment="Left" Margin="915,260,0,0" VerticalAlignment="Top" FontSize="21" Height="47" Width="105"/>
+        <Label Content="Tipo de contrato:" HorizontalAlignment="Left" Margin="915,380,0,0" VerticalAlignment="Top" FontSize="21" Height="44" Width="229"/>
+        <Label Content="Categoria:" HorizontalAlignment="Left" Margin="915,481,0,0" VerticalAlignment="Top" FontSize="21" Height="45" Width="142"/>
+
+        <Button Content="Registrar" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="159" 
+                Click="Register_Click" BorderBrush="#FF7BDA3C" Background="#FF7BDA3C" Margin="918,772,0,0" Cursor="Hand" Foreground="White"/>
+        <Button Content="Regresar" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="159" 
+                Click="Back_Click" BorderBrush="#FFEA4343" Background="#FFEA4343" Margin="1155,772,0,0" Cursor="Hand" Foreground="White"/>
+
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="213,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="401" FontSize="20" Height="54"/>
+        <TextBox x:Name="txtMiddleName" HorizontalAlignment="Left" Margin="213,446,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="402" FontSize="20" Height="54"/>
+        <TextBox x:Name="txtLastname" HorizontalAlignment="Left" Margin="213,583,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="402" FontSize="20" Height="54"/>
+        <TextBox x:Name="txtTuition" HorizontalAlignment="Left" Margin="215,715,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" FontSize="20" Height="54"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="915,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="399" FontSize="20" Height="54"/>
+        <ComboBox x:Name="cbContractType" HorizontalAlignment="Left" Margin="915,429,0,0" VerticalAlignment="Top" Width="370" FontSize="20" Height="41"/>
+        <ComboBox x:Name="cbCategory" HorizontalAlignment="Left" Margin="915,531,0,0" VerticalAlignment="Top" Width="370" FontSize="20" Height="42"/>
+        <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="915,587,0,0" VerticalAlignment="Top" FontSize="21" Height="46" Width="162"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="915,638,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="399" FontSize="20" Height="54"/>
 
     </Grid>
 </Page>

@@ -17,28 +17,13 @@ using System.Windows.Shapes;
 namespace Constancias.Views
 {
     /// <summary>
-    /// Lógica de interacción para AdminRecordsView.xaml
+    /// Lógica de interacción para ProfessorView.xaml
     /// </summary>
-    public partial class AdminRecordsView : Page
+    public partial class ProfessorView : Page
     {
-        public AdminRecordsView()
+        public ProfessorView()
         {
             InitializeComponent();
-        }
-
-        private void RegistrarConstancia(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new RecordRegister());
-        }
-
-        private void IrAProfesores(object sender, MouseButtonEventArgs e)
-        {
-            this.NavigationService.Navigate(new Constancias.Views.AdminView());
-        }
-
-        private void IrAConstancias(object sender, MouseButtonEventArgs e)
-        {
-            this.NavigationService.Navigate(new Constancias.Views.AdminRecordsView());
         }
 
         private void CerrarSesion(object sender, RoutedEventArgs e)
